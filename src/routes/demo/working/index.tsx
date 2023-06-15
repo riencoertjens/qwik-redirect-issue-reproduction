@@ -7,9 +7,9 @@ export const onRequest: RequestHandler<void> = async (onRequestArgs) => {
   throw redirect(303, `${url.pathname}/route`);
 };
 
-// uncomment to make redirect work
-// export default component$(() => (
-//   <div>
-//     welcome to <code>/broken/nested</code>
-//   </div>
-// ));
+// comment to make redirect break
+export default component$(() => (
+  <div>
+    welcome to <code>/working</code>
+  </div>
+));
