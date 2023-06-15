@@ -5,7 +5,18 @@ import { Link } from "@builder.io/qwik-city";
 export default component$(() => {
   return (
     <>
-      <Link href="./demo/some-route/[some-key]">some-route/[some-key]</Link>
+      <ul>
+        <li>
+          <Link href="/broken">
+            go to <code>/broken</code>
+          </Link>
+        </li>
+        <li>
+          <Link href="/working">
+            go to <code>/working</code>
+          </Link>
+        </li>
+      </ul>
     </>
   );
 });

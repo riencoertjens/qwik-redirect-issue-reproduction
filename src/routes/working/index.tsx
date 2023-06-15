@@ -7,7 +7,7 @@ export const onRequest: RequestHandler<void> = async (onRequestArgs) => {
   throw redirect(303, `${url.pathname}/route`);
 };
 
-// comment to make redirect break
+// comment this out to make redirect break
 export default component$(() => (
   <div>
     welcome to <code>/working</code>
