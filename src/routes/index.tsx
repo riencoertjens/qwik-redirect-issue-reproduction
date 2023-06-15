@@ -8,19 +8,22 @@ export default component$(() => {
     <>
       <ul>
         <li>
-          <Link href="/broken">
-            go to <code>/broken</code>
+          <Link href="/serverdata">
+            go to <code>/serverdata</code> using{" "}
+            <code>{'<Link href="/serverdata"/>'}</code>
           </Link>
         </li>
         <li>
-          <button onClick$={() => navigate("/broken")}>
-            go to <code>/broken</code> (button)
+          <button onClick$={() => navigate("/serverdata")}>
+            go to <code>/serverdata</code> using{" "}
+            <code>{'<button onClick$={() => navigate("/serverdata")}>'}</code>
           </button>
         </li>
         <li>
-          <Link href="/working">
-            go to <code>/working</code>
-          </Link>
+          <a href="/serverdata">
+            go to <code>/serverdata</code> using{" "}
+            <code>{'<a href="/serverdata"/>'}</code>
+          </a>
         </li>
       </ul>
     </>
